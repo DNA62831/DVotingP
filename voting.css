@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+body {
+    
+    background-image: url("BODY BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+    font-family: Raleway, sans-serif;
+  }
+  h3 {
+    text-align: center;
+  }
+  .party {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .party img {
+    margin-right: 20px;
+  }
+  .party h2 {
+    margin: 0;
+  }
+  #vote-button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    border-radius: 5px;
+    border: 0px;
+    width: 20%;
+    height: 2em;
+    cursor: pointer;
+  }
+
+  .submit1{
+    justify-content: center;
+    display: flex;
+    padding-top: 3%;
+    font-family: Raleway, sans-serif;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.submit{
+  justify-content: center;
+  display: flex;
+  font-family: Raleway, sans-serif;
+}

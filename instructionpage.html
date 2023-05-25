@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Voting System</title>
+    <style>
+        /* Apply Indian tricolor gradient as background */
+        body {
+            background-image: url("BODY BG.png");
+        }
+ 
+        /* Center the page content */
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+ 
+        /* Style the header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+ 
+        /* Style the page title */
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #222;
+            margin-left: 10px;
+        }
+ 
+        /* Apply styles to the instructions box */
+        .instructions-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            color: #222;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.5;
+            max-width: 500px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+        /* Apply CSS styles to the vote button */
+        .vote-btn {
+            background-color: #128807;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .vote-btn:hover {
+            background-color: #0f7005;
+        }
+ 
+        /* Style the Indian flag icon */
+        .indian-flag {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+ 
+        /* Style the text inside the flag */
+        .flag-text {
+            font-size: 35px;
+            font-weight: bold;
+            color: #222;
+            line-height: 1;
+        }
+        .submit{
+        justify-content: center;
+        display: flex;
+        font-family: Raleway, sans-serif;
+        font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="https://img.icons8.com/officel/80/000000/india.png" class="indian-flag">
+            <h1 class="flag-text">E-Voting System</h1>
+        </header>
+ 
+        <div class="instructions-box">
+            <p>Thank you for participating in our e-voting system. Please read the following instructions carefully:</p>
+            <ul>
+                    <li>You may only vote once.</li>
+                    <li>You may only vote for the candidates listed on the ballot.</li>
+                    <li>Any attempt to tamper with the voting process is strictly prohibited.</li>
+                    <li>Your vote is anonymous and confidential.</li>
+            </ul>
+                <form>
+                    <input type="checkbox" id="agree" name="agree" required>I have read and understood the rules.<br><br></form>
+                    <form action="voting.html">
+                   <input type="submit" class="vote-btn" value="Submit" style="font-size: large; width: 4cm; height: 1.3cm; color: #fff; background-color: #000089; border-radius: 15px; display: flex; justify-content: center; align-items: center;">
+                </form> 
+        </div>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>

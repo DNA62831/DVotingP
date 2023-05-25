@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="voting.css">
+    <title>E-Voting System</title>
+  </head>
+  <body>
+    
+    <h3>Please choose one of the following parties to vote for:</h3>
+    <form>
+      <div class="party">
+        <img src="bsp.png" alt="Bahujan Samaj Party" width="100">
+        
+          <h2>Bahujan Samaj Party</h2>
+            <input type="radio" value="BSP" id="vote-button" name="party">
+      </div><br>
+      <div class="party">
+        <div class="bjpimg">
+        <img src="bjp.png" alt="Bharatiya Janata Party" width="100">
+        </div>
+          <h2>Bharatiya Janata Party</h2>
+
+            <input type="radio" value="BJP" id="vote-button" name="party">
+      </div><br>
+      <div class="party">
+        <img src="inc.png" alt="Indian National Congress" width="100">
+        
+          <h2>Indian National Congress</h2>
+        
+          
+            <input type="radio" value="INC" id="vote-button" name="party">
+        
+      </div><br>
+      <div class="party">
+        <img src="ncp.png" alt="Nationalist Congress Party" width="100">
+          <h2>Nationalist Congress Party</h2>
+        <input type="radio" value="NCP" id="vote-button" name="party">
+      </div><br>
+      </form>   
+      <div class="submit1"><form class="button" action="#popup1"><input class="" type="submit" value="Submit" style="font-size: large; width: 4cm; height: 1.3cm; color: #fff; background-color: #000089; border-radius: 15px;"></form></div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form><input type="checkbox" value="verified" style="margin-left: 100px;" required>Are you sure you wat to submit?<br><br><br></form>
+            <form action="thankyou.html"><input type="submit" value="Submit" class="submit" style="font-size: large; width: 4cm; height: 1.3cm; color: #fff; background-color: #000089; border-radius: 15px; margin-left: 07em;"></form>
+          </div>
+        </div>
+      </div>
+  
+    </body>
+
+
+ 

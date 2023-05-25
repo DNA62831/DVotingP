@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <linK rel="stylesheet" href="login.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+	<title>E-Voting Login Page</title>
+	<link rel="stylesheet"
+		href="style.css">
+		<script defer src="app.js"></script>
+</head>
+<body>
+    
+	<!-- container div -->
+	<div class="container">
+
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<form action="instructionpage.html">
+			<div class="login-box">
+				<input type="email"
+					class="email ele"
+					placeholder="youremail@email.com" required
+					id="email">
+				<input type="password"
+					class="password ele"
+					placeholder="password" required
+					id="password">
+				<button class="clkbtn"
+				id="clkbtn">
+				Login</button></form>
+			</div>
+
+			<!-- signup form -->
+			<form action="instructionpage.html">
+			<div class="signup-box">
+				<input type="text"
+					class="name ele"
+					placeholder="Enter your name" required>
+				<input type="email"
+					class="email ele" required
+					placeholder="youremail@email.com">
+				<input type="text" required
+					class="number ele"
+					placeholder="Aadhaar Card No.">
+				<input type="password"
+					class="password ele"
+					placeholder="Password" required>
+				<button class="clkbtn">Signup</button></form>
+			</div>
+		</div>
+	</div>
+	<script src="myscript.js"></script>
+</body>
+
+</html>
